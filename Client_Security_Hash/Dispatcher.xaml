@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>752.8,1961.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>653.6,1539.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Dispatcher_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -58,7 +58,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="732.8,1861.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="633.6,1479.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="x:String" Default="SecurityHashQueue" Name="OrchestratorQueueName" />
@@ -68,19 +68,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="691.2,1768.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="146f1cd560e02fbc1e9a8b0fe162831d" Selector="&lt;html app='chrome.exe' omit:title='ACME System 1 - Dashboard' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="592,1386.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="146f1cd560e02fbc1e9a8b0fe162831d" Selector="&lt;html app='chrome.exe' omit:title='ACME System 1 - Dashboard' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="657.6,1621.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap:VirtualizedContainerService.HintSize="558.4,1239.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="616,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="516.8,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -102,13 +102,13 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="616,1381.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,999.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="574.4,602.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,602.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,7 +131,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100" NextLinkSelector="&lt;webctrl omit:aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
                           <ui:ExtractData.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1caffd976730d882fc3930572732c704" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1caffd976730d882fc3930572732c704" Selector="&lt;webctrl idx='207' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -145,19 +145,19 @@
                   </ui:BrowserScope.Body>
                 </ui:BrowserScope>
               </Sequence>
-              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="574.4,646.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="475.2,264" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,497.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="483.2,22.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[OrchestratorQueueName]">
+                      <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[OrchestratorQueueName]">
                         <ui:AddQueueItem.ItemInformation>
                           <InArgument x:TypeArguments="x:String" x:Key="WIID">[row("WIID").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="Description">[row("Description").ToString]</InArgument>
@@ -166,16 +166,6 @@
                           <InArgument x:TypeArguments="x:String" x:Key="Date">[row("Date").ToString]</InArgument>
                         </ui:AddQueueItem.ItemInformation>
                       </ui:AddQueueItem>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[row.Item(4).ToString]" />
-                      <If Condition="[row.Item(4).ToString= &quot;WI5&quot;]" sap:VirtualizedContainerService.HintSize="483.2,209.6" sap2010:WorkflowViewState.IdRef="If_2">
-                        <If.Then>
-                          <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="OrchestratorQueueName">
-                            <ui:AddQueueItem.ItemInformation>
-                              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
-                            </ui:AddQueueItem.ItemInformation>
-                          </ui:AddQueueItem>
-                        </If.Then>
-                      </If>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEachRow.Body>
