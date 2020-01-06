@@ -1651,15 +1651,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TNAGABA002\\.nuget\\packages\\": {}
+    "C:\\Users\\MyComputer\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "ClientSecurityHash_REF",
       "projectName": "ClientSecurityHash_REF",
-      "projectPath": "C:\\Users\\TNAGABA002\\Documents\\UiPath\\Advanced training\\Client Hash\\client_security_hash\\.local",
-      "packagesPath": "C:\\Users\\TNAGABA002\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TNAGABA002\\Documents\\UiPath\\Advanced training\\Client Hash\\client_security_hash\\.local"
+      "projectPath": "C:\\Users\\MyComputer\\Documents\\UiPath\\Advanced training\\Client Security Hash\\ClientSecurityHash_REF\\.local",
+      "packagesPath": "C:\\Users\\MyComputer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MyComputer\\Documents\\UiPath\\Advanced training\\Client Security Hash\\ClientSecurityHash_REF\\.local"
     },
     "frameworks": {
       "net461": {

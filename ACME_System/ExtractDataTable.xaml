@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
-    <x:Property Name="out_ExtractDataTable" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="out_DataTable" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -58,9 +58,9 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Extract all work items from the work items table&#xD;&#xA;&#xD;&#xA;Precondition: Work items page opens successfully&#xD;&#xA;Post condition: Work items are stored in a datatable variable" DisplayName="ExtractDataTable" sap:VirtualizedContainerService.HintSize="558.4,1005.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Extract all work items from the work items table&#xA;&#xA;Precondition: Work items page opens successfully&#xA;Post condition: Work items are stored in a datatable variable" DisplayName="ExtractDataTable" sap:VirtualizedContainerService.HintSize="558.4,1005.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTableExtract" />
       <Variable x:TypeArguments="x:String" Default="SecurityHashQueue" Name="OrchestratorQueueName" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -93,7 +93,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
+                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[DataTableExtract]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
                   <ui:ExtractData.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="094f2db6df53c1539b807282f79eda46" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.TimeoutMS>
@@ -107,7 +107,7 @@
           </ui:BrowserScope.Body>
         </ui:BrowserScope>
       </Sequence>
-      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="475.2,264" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DataTableExtract]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="475.2,264" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
